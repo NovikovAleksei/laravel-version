@@ -1,0 +1,22 @@
+{
+    "name": "alex/laravel-version",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleksei Novikov",
+            "email": "aleksei.novikov.dev@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Alex\\LaravelVersion\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Alex\\LaravelVersion\\Tests": "tests/"
+        }
+    }
+}
