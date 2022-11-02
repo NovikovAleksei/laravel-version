@@ -1,5 +1,5 @@
 {
-    "name": "alex/laravel-version",
+    "name": "novikovaleksei/laravel-version",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -11,12 +11,12 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Alex\\LaravelVersion\\": "src/"
+            "NovikovAleksei\\LaravelVersion\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Alex\\LaravelVersion\\Tests": "tests/"
+            "NovikovAleksei\\LaravelVersion\\Tests": "tests/"
         }
     }
 }
