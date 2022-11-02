@@ -4,7 +4,7 @@ namespace NovikovAleksei\LaravelVersion;
 
 use Illuminate\Container\Container;
 
-class Version
+class LaravelVersionFactory
 {
     /**
      * @var Container
