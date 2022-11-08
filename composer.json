@@ -8,7 +8,9 @@
             "email": "aleksei.novikov.dev@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "php": "^8.0"
+    },
     "autoload": {
         "psr-4": {
             "NovikovAleksei\\LaravelVersion\\": "src/"
