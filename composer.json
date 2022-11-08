@@ -20,5 +20,18 @@
         "psr-4": {
             "NovikovAleksei\\LaravelVersion\\Tests": "tests/"
         }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.11"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NovikovAleksei\\LaravelVersion\\VersionServiceProvider"
+            ],
+            "aliases": {
+                "LaravelVersion": "NovikovAleksei\\LaravelVersion\\VersionLaravel"
+            }
+        }
     }
 }
