@@ -3,6 +3,7 @@
 namespace NovikovAleksei\LaravelVersion;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Contracts\Foundation\Application;
 
 class VersionServiceProvider extends ServiceProvider
 {
@@ -13,8 +14,8 @@ class VersionServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->bind('get-version', function () {
-            return new VersionLaravel();
+        $this->app->bind(VersionLaravel::class, function ($app) {
+            return new VersionLaravel($app->make(Application::class));
         });
     }
 }

@@ -5,8 +5,9 @@ namespace NovikovAleksei\LaravelVersion;
 use Illuminate\Contracts\Foundation\Application;
 
 
-class VersionLaravel
+class VersionLumen
 {
+
     protected Application $app;
 
     /**
@@ -20,7 +21,7 @@ class VersionLaravel
     /**
      * @return Application
      */
-    public function getApp() : Application
+    public function getApp(): Application
     {
         return $this->app;
     }
@@ -28,7 +29,7 @@ class VersionLaravel
     /**
      * @return string
      */
-    public function getVersion() : string
+    public function getVersion(): string
     {
         return $this->app->version();
     }
