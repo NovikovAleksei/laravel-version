@@ -5,7 +5,7 @@ Shows laravel version in a project
 
 1. PHP >= 8.0
 2. laravel/framework >= 9.0
-3. novikovaleksei/laravel-version >=1.0.0
+3. novikovaleksei/laravel-version >=1.0
 
 
 ## Installation
@@ -27,5 +27,5 @@ NovikovAleksei\LaravelVersion\VersionServiceProvider::class
 3. Run:
 
 ```php
-
+$versionLaravel->getVersion()
 ```
