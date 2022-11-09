@@ -7,7 +7,7 @@ use Illuminate\Contracts\Foundation\Application;
 
 class VersionServiceProvider extends ServiceProvider
 {
-    public function boot() :string
+    public function boot()
     {
 
     }
