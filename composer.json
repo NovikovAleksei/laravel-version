@@ -2,6 +2,7 @@
     "name": "novikovaleksei/laravel-version",
     "type": "library",
     "license": "MIT",
+    "version": "1.0.5",
     "authors": [
         {
             "name": "Aleksei Novikov",
@@ -29,10 +30,7 @@
         "laravel": {
             "providers": [
                 "NovikovAleksei\\LaravelVersion\\VersionServiceProvider"
-            ],
-            "aliases": {
-                "LaravelVersion": "NovikovAleksei\\LaravelVersion\\VersionLaravel"
-            }
+            ]
         }
     }
 }

@@ -14,8 +14,12 @@ class VersionServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->bind(VersionLaravel::class, function ($app) {
-            return new VersionLaravel($app->make(Application::class));
+        $this->app->bind(VersionInterface::class, function ($app) {
+            if (app() instanceof \Illuminate\Foundation\Application) {
+                return new VersionLaravel($app->make(Application::class));
+            } else {
+                return new VersionLumen($app->make(Application::class));
+            }
         });
     }
 }

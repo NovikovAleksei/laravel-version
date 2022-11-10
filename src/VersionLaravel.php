@@ -5,7 +5,7 @@ namespace NovikovAleksei\LaravelVersion;
 use Illuminate\Contracts\Foundation\Application;
 
 
-class VersionLaravel
+class VersionLaravel implements VersionInterface
 {
     protected Application $app;
 
